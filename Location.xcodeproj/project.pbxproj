@@ -14,6 +14,8 @@
 		9A7408FD1E3F078000069D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7408FB1E3F078000069D30 /* LaunchScreen.storyboard */; };
 		9A7409081E3F078000069D30 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7409071E3F078000069D30 /* LocationTests.swift */; };
 		9A7409131E3F078000069D30 /* LocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7409121E3F078000069D30 /* LocationUITests.swift */; };
+		9A7409211E3F09CB00069D30 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7409201E3F09CB00069D30 /* SingletonClass.swift */; };
+		9AB35A331E3F5E8000518690 /* kvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB35A321E3F5E8000518690 /* kvc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9A74090E1E3F078000069D30 /* LocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7409121E3F078000069D30 /* LocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUITests.swift; sourceTree = "<group>"; };
 		9A7409141E3F078000069D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7409201E3F09CB00069D30 /* SingletonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
+		9AB35A321E3F5E8000518690 /* kvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				9A7408F91E3F078000069D30 /* Assets.xcassets */,
 				9A7408FB1E3F078000069D30 /* LaunchScreen.storyboard */,
 				9A7408FE1E3F078000069D30 /* Info.plist */,
+				9A7409201E3F09CB00069D30 /* SingletonClass.swift */,
+				9AB35A321E3F5E8000518690 /* kvc.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB35A331E3F5E8000518690 /* kvc.swift in Sources */,
+				9A7409211E3F09CB00069D30 /* SingletonClass.swift in Sources */,
 				9A7408F51E3F078000069D30 /* ViewController.swift in Sources */,
 				9A7408F31E3F078000069D30 /* AppDelegate.swift in Sources */,
 			);
@@ -412,6 +420,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Location/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pho.Location;
@@ -424,6 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Location/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pho.Location;
@@ -505,6 +521,7 @@
 				9A7409191E3F078000069D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A74091A1E3F078000069D30 /* Build configuration list for PBXNativeTarget "LocationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +530,7 @@
 				9A74091C1E3F078000069D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A74091D1E3F078000069D30 /* Build configuration list for PBXNativeTarget "LocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +539,7 @@
 				9A74091F1E3F078000069D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
